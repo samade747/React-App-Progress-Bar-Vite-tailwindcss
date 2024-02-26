@@ -31,7 +31,7 @@ function App() {
          onClick={() => dec() }><b>-</b></button>
       </div>
 
-    <input type="number" value={count2 == 0 ? counter : count2} />
+    <input className='rounded hover:bg-black hover:text-white' type="number" value={count2 == 0 ? counter : count2} />
 
 
       <div>
@@ -42,7 +42,7 @@ function App() {
 
       </div>  
 
-      <div className='bg-black text-white' style={{fontSize: "30px", fontWeight: "50px"}}>
+      <div className='bg-black text-white py-2 px-4 rounded' style={{fontSize: "30px", fontWeight: "50px"}}>
         {count2 == 0 ?`today is `+ convertdate: `${count2} days from today is `+ convertdate }
       </div>
 
