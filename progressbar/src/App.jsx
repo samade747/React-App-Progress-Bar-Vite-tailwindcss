@@ -7,7 +7,13 @@ function App() {
   const [counter, setCounter] = useState(1)
   const [count2, setCount2] = useState(0)
 
+  const Inc = () => {
+    setCount2(Number(count2) + Number(counter))
+  }
 
+  const dec = () => {
+    setCount2(Number(count2) - Number(counter))
+  }
 
 
   const date = new Date()
@@ -16,7 +22,7 @@ function App() {
 
 
   return (
-    <div className='flex justify-center itesm-center flex-col h-80vh'>      
+    <div className='flex justify-center itesm-center flex-col h-80vh rounded'>      
       <div className='flex flex-col items-center justify-center bg-gray-100 w-400 h-300'>
 
 
